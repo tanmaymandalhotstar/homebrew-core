@@ -35,7 +35,7 @@ class Pmd < Formula
       }
     EOS
 
-    system "#{bin}/pmd", "pmd", "-d", "#{testpath}/java", "-R",
-      "rulesets/java/basic.xml", "-f", "textcolor", "-l", "java"
+    system "#{bin}/pmd", "check", "-d", "#{testpath}/java", "-R",
+      "rulesets/java/basic.xml", "-f", "textcolor"
   end
 end
